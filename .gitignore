@@ -1,0 +1,56 @@
+# Target and build artifacts
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Environment files
+.env
+.env.*
+.env.local
+!.env.example
+
+# STS / Eclipse
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# NetBeans
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+.nb-gradle/
+
+# VS Code
+.vscode/
+
+# Editor swap files
+*.swp
+*.swo
+*~
+
+# Crash reports and dumps
+*.dump
+*.dumpstream
+hs_err_pid*
+replay_pid*
+
+# OS & Temp Files
+.DS_Store
+Thumbs.db
+*.log
+*.tmp

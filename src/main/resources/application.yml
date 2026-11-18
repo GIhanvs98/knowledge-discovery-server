@@ -1,0 +1,44 @@
+server:
+  port: ${SERVER_PORT:8761}
+
+spring:
+  application:
+    name: ${SPRING_APPLICATION_NAME:discovery-server}
+
+eureka:
+  instance:
+    hostname: ${EUREKA_HOSTNAME:localhost}
+  client:
+    # Standalone mode: Eureka Discovery Server should not register itself as a client
+    register-with-eureka: ${EUREKA_REGISTER_WITH_EUREKA:false}
+    # Standalone mode: Server does not fetch registries from peer nodes
+    fetch-registry: ${EUREKA_FETCH_REGISTRY:false}
+    service-url:
+      defaultZone: ${EUREKA_SERVICE_URL:http://${eureka.instance.hostname}:${server.port}/eureka/}
+  server:
+    # Disable self-preservation for standalone development / single node environment
+    enable-self-preservation: ${EUREKA_ENABLE_SELF_PRESERVATION:false}
+    eviction-interval-timer-in-ms: ${EUREKA_EVICTION_INTERVAL_TIMER_IN_MS:10000}
+
+# Spring Boot Actuator Configuration
+management:
+  endpoints:
+    web:
+      exposure:
+        # Expose only health and info endpoints as required
+        include: ${MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE:health,info}
+  endpoint:
+    health:
+      # Show detailed health status for monitoring
+      show-details: ${MANAGEMENT_ENDPOINT_HEALTH_SHOW_DETAILS:always}
+      probes:
+        enabled: true
+  info:
+    env:
+      enabled: true
+
+info:
+  app:
+    name: "@project.name@"
+    description: "@project.description@"
+    version: "@project.version@"
