@@ -53,7 +53,7 @@ discovery-server/
     ├── main/
     │   ├── java/
     │   │   └── lk/
-    │   │       └── facadecenter/
+    │   │       └── gihanvs/
     │   │           └── knowledge/
     │   │               └── discovery/
     │   │                   ├── DiscoveryServerApplication.java
@@ -64,7 +64,7 @@ discovery-server/
     └── test/
         └── java/
             └── lk/
-                └── facadecenter/
+                └── gihanvs/
                     └── knowledge/
                         └── discovery/
                             └── DiscoveryServerApplicationTests.java

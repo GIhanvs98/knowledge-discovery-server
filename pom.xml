@@ -11,7 +11,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>lk.facadecenter.knowledge</groupId>
+    <groupId>lk.gihanvs.knowledge</groupId>
     <artifactId>discovery-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>discovery-server</name>

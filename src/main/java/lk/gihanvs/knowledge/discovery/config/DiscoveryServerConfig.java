@@ -1,4 +1,4 @@
-package lk.facadecenter.knowledge.discovery.config;
+package lk.gihanvs.knowledge.discovery.config;
 
 import org.springframework.context.annotation.Configuration;
 

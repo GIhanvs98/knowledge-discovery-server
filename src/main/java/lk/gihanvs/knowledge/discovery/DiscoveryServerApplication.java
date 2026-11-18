@@ -1,4 +1,4 @@
-package lk.facadecenter.knowledge.discovery;
+package lk.gihanvs.knowledge.discovery;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

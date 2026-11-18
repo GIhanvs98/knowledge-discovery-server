@@ -1,4 +1,4 @@
-package lk.facadecenter.knowledge.discovery;
+package lk.gihanvs.knowledge.discovery;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
